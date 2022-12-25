@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Ранг</title>
+	<link rel="stylesheet" type="text/css" href="CSS/Main.css">
+
+		<center>
+		<div class="menu">
+			<h1 style="text-align: center;">Разраб ап</h1>
+			<a href="Main.html"><button class="button" style="height: 50px; width: 150px">Главное Меню</button></a>
+			<a href="Shop.html"><button class="button" style="height: 50px; width: 150px">Магазин</button></a>
+			<a href="CollectP$.html"><button class="button" style="height: 50px; width: 150px">Заработать P$</button></a>
+			<a href="PremiumShop.html"><button class="button" style="height: 50px; width: 150px">Премиум Магазин</button></a>
+			<a href="Rank.html"><button class="OpenedButton" style="height: 50px; width: 150px">Ранг</button></a>
+			<a href="Authors.html"><button class="button" style="height: 50px; width: 150px">Авторы</button></a>
+		</div>
+	</center>
+</head>
+<body class="body">
+	<br>
+	<center>
+		<div>
+			<div class="header" style="height: 150px; width: 150px; display: inline-block;">
+				<br>
+				<br>
+				<label>Кубков: </label>
+				<label id="goblet">0</label>
+				<br>
+				<br>
+				<br>
+				<label>Ранг:</label>
+				<label id="Rank" style="color: brown;">Бронзовый</label>
+			</div>
+			<div style="height: 100px; display: inline-block; width: 100px"></div>
+			<div class="header" style="height: 100px; width: 200px; display: inline-block;">
+				<label>XP:</label>
+				<label id="XP">0</label>
+				<label>/ 1000</label>
+				<br>
+				<br>
+				<label>Уровень:</label>
+				<label id="Level">0</label>
+				<progress value="10" max="1000" id="LevelProgress" style="width: 150px">
+			</div>
+		</div>
+		<br>
+		<h2 style="color: white;">Вложить Кубки</h2>
+		<div class="header" style="height: 200px; width: 200px">
+			<br>
+			<br>
+			<input type="number" id="Input">
+			<p>С Шансом 20% Ты Можеш Получить x2 Кубков От Вложеного.</p>
+			<button class="button" style="height: 30px; width: 100px" onclick="Function1()">Вложить</button>
+		</div>
+		<br>
+		<h2 style="color: white;">Перевести Кубки В P$</h2>
+		<div class="header" style="height: 150px; width: 200px">
+			<br>
+			<br>
+			<input type="number" id="Input1">
+			<p>1 Кубок = 10P$</p>
+			<button class="button" style="height: 30px; width: 100px" onclick="GobletsToP$()">Перевести</button>
+		</div>
+	</center>
+	<script type="text/javascript" src="Javascript/Rank.js"></script>
+</body>
+</html>
